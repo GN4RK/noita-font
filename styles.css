@@ -210,3 +210,96 @@ body {
     color: #022140;
     z-index: 10;
 }
+
+/* ===== ALPHABET PREVIEW ===== */
+.alphabet-preview {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    min-height: 80px;
+}
+
+.alphabet-text {
+    font-family: 'NoitaBlackletter', Arial, sans-serif;
+    font-size: 75px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.alphabet-char {
+    display: inline-block;
+    background-image: url('images/noita_alphabets.png');
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    text-indent: -9999px;
+    overflow: hidden;
+    /* Adjust these values based on your actual image dimensions */
+    background-size: 2600% 100%; /* Change this based on how many characters are in your image */
+}
+
+/* Character mappings - adjust these positions based on your actual image layout */
+/* If your image has characters in a different order or layout, modify these positions */
+.alphabet-char[data-char="A"] { background-position: 0% 0; }
+.alphabet-char[data-char="B"] { background-position: 2% 0; }
+.alphabet-char[data-char="C"] { background-position: 7.692% 0; }
+.alphabet-char[data-char="D"] { background-position: 11.538% 0; }
+.alphabet-char[data-char="E"] { background-position: 15.384% 0; }
+.alphabet-char[data-char="F"] { background-position: 19.230% 0; }
+.alphabet-char[data-char="G"] { background-position: 23.076% 0; }
+.alphabet-char[data-char="H"] { background-position: 26.922% 0; }
+.alphabet-char[data-char="I"] { background-position: 30.768% 0; }
+.alphabet-char[data-char="J"] { background-position: 34.614% 0; }
+.alphabet-char[data-char="K"] { background-position: 38.460% 0; }
+.alphabet-char[data-char="L"] { background-position: 42.306% 0; }
+.alphabet-char[data-char="M"] { background-position: 46.152% 0; }
+.alphabet-char[data-char="N"] { background-position: 49.998% 0; }
+.alphabet-char[data-char="O"] { background-position: 53.844% 0; }
+.alphabet-char[data-char="P"] { background-position: 57.690% 0; }
+.alphabet-char[data-char="Q"] { background-position: 61.536% 0; }
+.alphabet-char[data-char="R"] { background-position: 65.382% 0; }
+.alphabet-char[data-char="S"] { background-position: 69.228% 0; }
+.alphabet-char[data-char="T"] { background-position: 73.074% 0; }
+.alphabet-char[data-char="U"] { background-position: 76.920% 0; }
+.alphabet-char[data-char="V"] { background-position: 80.766% 0; }
+.alphabet-char[data-char="W"] { background-position: 84.612% 0; }
+.alphabet-char[data-char="X"] { background-position: 88.458% 0; }
+.alphabet-char[data-char="Y"] { background-position: 92.304% 0; }
+.alphabet-char[data-char="Z"] { background-position: 96.150% 0; }
+
+/* Numbers (if present in your image) */
+.alphabet-char[data-char="0"] { background-position: 0% 100%; }
+.alphabet-char[data-char="1"] { background-position: 10% 100%; }
+.alphabet-char[data-char="2"] { background-position: 20% 100%; }
+.alphabet-char[data-char="3"] { background-position: 30% 100%; }
+.alphabet-char[data-char="4"] { background-position: 40% 100%; }
+.alphabet-char[data-char="5"] { background-position: 50% 100%; }
+.alphabet-char[data-char="6"] { background-position: 60% 100%; }
+.alphabet-char[data-char="7"] { background-position: 70% 100%; }
+.alphabet-char[data-char="8"] { background-position: 80% 100%; }
+.alphabet-char[data-char="9"] { background-position: 90% 100%; }
+
+/* Special characters */
+.alphabet-char[data-char="."] { background-position: 0% 200%; }
+.alphabet-char[data-char=","] { background-position: 10% 200%; }
+.alphabet-char[data-char="!"] { background-position: 20% 200%; }
+.alphabet-char[data-char="?"] { background-position: 30% 200%; }
+.alphabet-char[data-char=":"] { background-position: 40% 200%; }
+.alphabet-char[data-char=";"] { background-position: 50% 200%; }
+
+/* Space character */
+.alphabet-char[data-char=" "] { 
+    background-image: none; 
+    width: 0.5em; 
+}
+
+/* Checkbox styles */
+.checkbox {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
