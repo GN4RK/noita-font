@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noita Blackletter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="title">Noita Blackletter</h1>
+    
+    <div class="text-editor">
+        <h2>Text editor with Noita Blackletter font</h2>
+        <textarea id="text-editor" placeholder="Type your text here to see the Noita Blackletter font in action..."></textarea>
+        
+        <div class="controls">
+            <label for="font-size-slider">Font Size:</label>
+            <div class="size-controls">
+                <input type="range" id="font-size-slider" min="12" max="200" value="75" class="slider">
+                <input type="number" id="font-size-input" min="12" max="200" value="75" class="number-input">
+                <span class="unit">px</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <label>Gradient Offset:</label>
+            <div class="offset-controls">
+                <div class="offset-group">
+                    <label for="offset-x-slider">X Offset:</label>
+                    <div class="offset-inputs">
+                        <input type="range" id="offset-x-slider" min="-200" max="200" value="0" class="slider">
+                        <input type="number" id="offset-x-input" min="-200" max="200" value="0" class="number-input">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+                <div class="offset-group">
+                    <label for="offset-y-slider">Y Offset:</label>
+                    <div class="offset-inputs">
+                        <input type="range" id="offset-y-slider" min="-200" max="200" value="0" class="slider">
+                        <input type="number" id="offset-y-input" min="-200" max="200" value="0" class="number-input">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-preview" id="text-preview">
+            <div class="text-plain" id="text-plain">Test</div>
+            <div class="text-shadow" id="text-shadow">Test</div>
+        </div>
+    </div>
+</body>
+</html>
